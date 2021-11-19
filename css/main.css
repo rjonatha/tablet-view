@@ -1,0 +1,184 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
+}
+
+h1 { 
+    color: black; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 54px; 
+    font-weight: 300; 
+    line-height: 58px; 
+    margin: 5%;
+}
+
+footer {
+	font-size: 14px;
+	background-color: red;
+	width: 100%;
+	bottom: 0px;
+	padding: 20px;
+	text-align: center;
+}
+
+/*mobile*/
+.topnav li.a, li, .rightnav {
+	float: none;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: rgb(0, 0, 0);
+}  
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active), a:focus:not(.active), .active {
+	color: rgb(0, 0, 0);
+    background-color: yellow;
+	text-decoration: underline;
+}
+
+p {
+    color: black; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    line-height: 26px;
+    margin: 1%;
+}
+
+.food {
+	margin: 0;
+	padding: 0;
+	height: 5fr;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	grid-column-gap: 5%;
+	grid-row-gap: 10;
+}
+
+.grid-item{
+	height: 5%;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.skip{
+	position: relative;
+	left: -2000px;
+}
+
+.skip:focus{
+	position: static;
+}
+
+.project_description {
+    color: black;
+	line-height: 1.2;
+	width: 80%;
+	margin-left: 5%;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	margin: 2% 0% 2%;
+	width: 100%;
+}
+
+.picture {
+	width: 90%;
+	margin: 5%;
+}
+
+.paragraph {
+	margin: 5%;
+	width: 90%
+}
+
+.fooddesc {
+	margin: 5%;
+	width: 80%;
+}
+
+#michigan {
+	margin: 3%;	
+	padding: 3%;
+}
+
+@media only screen and (min-width: 530px) {
+	.topnav {
+		list-style-type: none;
+		margin: 1%;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(36, 36, 36);
+	}
+	li {
+		float: left;
+	}
+	.rightnav {
+		float: right;
+	}
+
+	.project_description {
+		width: 100%;
+		margin-left: 5%;
+	}
+	.picture {
+		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.flex-container {
+		flex-direction: row;
+	}
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	#michigan {
+		display: flex;
+	}
+	.picture {
+		width: 90%;
+	}
+	.paragraph {
+		width: 70vh;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.picture {
+		width: 70%;
+	}
+}
+
+#bottom-footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+	width: 100%;
+}
